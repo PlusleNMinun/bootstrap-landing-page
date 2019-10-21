@@ -5,7 +5,7 @@
   <title>Registration</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="styles2.css">
 </head>
@@ -13,25 +13,169 @@
 <body>
   <a href="index.html"><button type="button" name="button" class="block btn nav">HOME</button></a>
   <div class="buffer"></div>
-  <div class="container d-flex align-items-center h-100">
+  <div class="container  align-items-center h-100">
     <div class="row row-full">
-      <section class="text-center col-sm-12 col-md-12 col-lg-6">
-        <img src="thegrand-architecture.jpg" class="img-fluid rounded" alt="The Grand Condos">
+      <section class="text-center col-sm-12 col-md-12 col-lg-6 opaque-background">
+        <!-- Carousel -->
+        <div id="condo-layout" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="hover">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="5-Living-Rooms.jpg" alt="The Grand living room">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="thegrand-architecture.jpg" alt="The Grand Kitchen">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="thegrand-bathroom.jpg" alt="The Grand bathroom">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="bed-bedroom-blanket-2747901.jpg" alt="The Grand bedroom">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="chairs-dug-out-pool-france-2096983.jpg" alt="The Grand Poolside">
+            </div>
+          </div>
+        </div>
+        <!-- Registration Form -->
       </section>
-      <header class="text-center col-sm-12 col-md-12 col-lg-6">
-        <h1><strong><em>The GRAND</em></strong></h1>
-        <h2>CONDOMINIUMS</h2>
-      </header>
+      <section class="text-center col-sm-12 col-md-12 col-lg-6 opaque-background">
+        <h1 class="grand-header"><strong><em>The GRAND</em></strong></h1>
+        <h2 class="condo">CONDOMINIUMS</h2>
+        <br />
+        <h6 class="text-uppercase coming">Condos coming to</h6>
+        <h1 class="location text-uppercase">Mississauga</h1>
+
+        <!-- Left Side Form -->
+        <form id="survey-form" method="GET" action="#">
+          <div class="container left-form-col col-sm-12 col-md-12 col-lg-6">
+            <div class="labels">
+              <label id="fname-label" for="first-name">First Name * </label>
+            </div>
+            <div class="tab">
+              <input autofocus type="text" name="first-name" id="fname" class="input-field" placeholder="" required>
+            </div>
+            <div class="labels">
+              <label id="email-label" for="email"><br />Email *</label>
+              <br />
+            </div>
+            <div class="tab">
+              <input type="email" name="email" id="email" class="input-field" required placeholder="">
+            </div>
+
+
+          </div>
+
+          <!-- Right Side Form -->
+          <div class="container left-form-col col-sm-12 col-md-12 col-lg-6">
+            <div class="labels">
+              <label id="lname-label" for="last-name">Last Name * </label>
+            </div>
+            <div class="tab">
+              <input autofocus type="text" name="last-name" id="lname" class="input-field" placeholder="" required>
+            </div>
+
+
+          </div>
+
+
+
+
+
 
 
     </div>
+
+
+    <!-- <div class="rightTab">
+
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age">* Age: </label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="currentPos">Which option best describes your current role?</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="currentPos" class="dropdown">
+      <option disabled value>Select an option</option>
+      <option  value="student">Student</option>
+      <option value="job">Full Time Job</option>
+      <option value="learner">Full Time Learner</option>
+      <option value="preferNo">Prefer not to say</option>
+      <option value="other">Other</option>
+    </select>
+      </div>
+    </div>
+    <div class="rowTab"> -->
+    <!-- <div class="labels"> -->
+
+    <!-- <label for="userRating">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label>Definitely<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Maybe<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Not sure<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="most-like">What do you like most in FCC: </label>
+      </div>
+      <div class="rightTab">
+        <select id="most-like" name="mostLike" class="dropdown">
+      <option disabled selected value>Select an option</option>
+      <option value="challenges">Challenges</option>
+      <option value="projects">Projects</option>
+      <option value="community">Community</option>
+      <option value="openSource">Open Source</option>
+    </select>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="preferences">Things that should be improved in the future<br>(Check all that apply): </label>
+      </div>
+      <div class="rightTab">
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Front-end Projects</label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Back-end Projects</li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Data Visualization</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Challenges</label></li>
+          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Open Source Community</label></li>
+          <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Gitter help rooms</label></li>
+          <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Videos</label></li>
+          <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">City Meetups</label></li>
+          <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userRatings">Wiki</label></li>
+          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Forum</label></li>
+          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Additional Courses</label></li>
+        </ul> -->
+  </div>
+  </div>
+  <div class="rowTab">
+    <div class="labels">
+      <label for="comments">Any Comments or Suggestions?</label>
+    </div>
+    <div class="rightTab">
+      <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+    </div>
+  </div>
+  <button id="submit" type="submit">Submit</button>
+  </form>
+  </section>
+  </div>
   </div>
 </body>
-<!-- Photo by Scott Webb from Pexels
-Photo by Jean van der Meulen from Pexels
-Photo by Felipe Hueb from Pexels
-Photo by julie aagaard from Pexels
- -->
-
+<!-- Photos from Pexels-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </html>
