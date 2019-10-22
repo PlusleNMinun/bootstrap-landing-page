@@ -13,9 +13,11 @@
 <body>
   <a href="index.html"><button type="button" name="button" class="block btn nav">HOME</button></a>
   <div class="buffer"></div>
+
   <div class="container  align-items-center h-100">
     <div class="row row-full">
       <section class="text-center col-sm-12 col-md-12 col-lg-6 opaque-background">
+
         <!-- Carousel -->
         <div id="condo-layout" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="hover">
           <div class="carousel-inner">
@@ -36,96 +38,100 @@
             </div>
           </div>
         </div>
-        
-        <!--       Registeration Form -->
-    <section class="col-12 opaque-background">
-              <!-- Registration Form Header-->
-       <section class="text-center">
-        <h1 class="grand-header"><strong><em>The GRAND</em></strong></h1>
-        <h2 class="condo">CONDOMINIUMS</h2>
-        <br />
-        <h6 class="text-uppercase coming">Condos coming to</h6>
-        <h1 class="location text-uppercase">Mississauga</h1>
       </section>
+
+      <!-- Registration Form -->
+
+      <section class="col-sm-12 col-md-12 col-lg-6 opaque-background">
+        <div class="text-center">
+          <h1 class="grand-header"><strong><em>The GRAND</em></strong></h1>
+          <h2 class="condo">CONDOMINIUMS</h2>
+          <br />
+          <h6 class="text-uppercase coming">Condos coming to</h6>
+          <h1 class="location text-uppercase">Mississauga</h1>
+        </div>
+
         <!-- Registration Form Body-->
         <div id="reg-form">
-        <form id="register-form" method="GET" action="#">
-        <div class="form-group">
-            <label for="fname"> First Name: *</label>
-              <input type="text" class="form-control" required id="fname">  
-         </div>
-         <div class="form-group">
-            <label for="lname">Last Name: *</label>
-              <input id="lname" class="form-control" type="text" required>  
-          </div>
-          <div class="form-group">
-             <label for="email">Email: *</label>
-              <input id="email" class="form-control" type="email" required>  
-          </div>
-          <div class="form-group">
-              <label for="phone">Phone Number: *</label>
-              <input type="tel" id="phone" class="form-control" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="012-345-6789">  
-          </div>
-          <div class="form-group">
-                <label for="city">City: </label>
-                <input id="city" class="form-control" type="text" placeholder="Current Residence">  
-          </div>
-          <div class="form-group">
-                <label for="postal-c">Postal Code: *</label>
-                <input id="postal-c" class="form-control" type="text" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" required placeholder="A0A 0A0">  
-          </div>
+          <form id="register-form" method="GET" action="#">
             <div class="form-group">
-                <label for="age-r">Age Range: *</label>
-                 <select class="form-control" id="age-r" required>
-                   <option>Click to Select</option>
-                    <option>18-34</option>
-                    <option>35-44</option>
-                    <option>45-54</option>
-                    <option>55+</option>
-                  </select>
-          </div>
-          <div class="form-group">
-                <label for="heard-from">How did you learn about us: *</label>
-                 <select class="form-control" id="heard-from" required>
-                   <option>Click to Select</option>
-                    <option>Twitter</option>
-                    <option>Facebook</option>
-                    <option>Instagram</option>
-                    <option>Billboard/Signage</option>
-                   <option>Newspaper</option>
-                   <option>Magazine</option>
-                   <option>Google Search Engine</option>
-                   <option>Other</option>
-                  </select>
-          </div>
-          <div class="form-group">
-                  <label for="pref-suite">Preferred Suite Style: *</label>
-                  <select class="form-control" id="pref-suite" required>
-                   <option>Click to Select</option>
-                   <option>1 Bed</option>
-                   <option>1 Bed + Den</option>
-                   <option>2 Bed</option>
-                   <option>2 Bed + Den</option>
-                   <option>2 Bed + Grand Terrace</option>
-                   <option>Penthouse Suite</option>
-                  </select>
-          </div>
-          <div class="form-group">
-                  <label for="realtor-id">Are you a Realtor? *</label>
-                  <select class="form-control" id="realtor-id" required>
-                   <option>Click to Select</option>
-                   <option>Yes</option>
-                   <option>No</option>
-                  </select>
-          </div>
-          <div class="form-group">
-            <label for="comment">Comments or Questions:</label>
-            <textarea class="form-control" rows="3" id="comment"></textarea>
-          </div>
-       <button type="submit" id="btn" class="btn btn-info">Submit</button>
-    
-         </form>
+              <label for="fname"> First Name: *</label>
+              <input type="text" class="form-control" required id="fname">
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name: *</label>
+              <input id="lname" class="form-control" type="text" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email: *</label>
+              <input id="email" class="form-control" type="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number: *</label>
+              <input type="tel" id="phone" class="form-control" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="012-345-6789">
+            </div>
+            <div class="form-group">
+              <label for="city">City: </label>
+              <input id="city" class="form-control" type="text" placeholder="Current Residence">
+            </div>
+            <div class="form-group">
+              <label for="postal-c">Postal Code: *</label>
+              <input id="postal-c" class="form-control" type="text" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" required placeholder="A0A 0A0">
+            </div>
+            <div class="form-group">
+              <label for="age-r">Age Range: *</label>
+              <select class="form-control" id="age-r" required>
+                <option>Click to Select</option>
+                <option>18-34</option>
+                <option>35-44</option>
+                <option>45-54</option>
+                <option>55+</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="heard-from">How did you learn about us: *</label>
+              <select class="form-control" id="heard-from" required>
+                <option>Click to Select</option>
+                <option>Twitter</option>
+                <option>Facebook</option>
+                <option>Instagram</option>
+                <option>Billboard/Signage</option>
+                <option>Newspaper</option>
+                <option>Magazine</option>
+                <option>Google Search Engine</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="pref-suite">Preferred Suite Style: *</label>
+              <select class="form-control" id="pref-suite" required>
+                <option>Click to Select</option>
+                <option>1 Bed</option>
+                <option>1 Bed + Den</option>
+                <option>2 Bed</option>
+                <option>2 Bed + Den</option>
+                <option>2 Bed + Grand Terrace</option>
+                <option>Penthouse Suite</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="realtor-id">Are you a Realtor? *</label>
+              <select class="form-control" id="realtor-id" required>
+                <option>Click to Select</option>
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="comment">Comments or Questions:</label>
+              <textarea class="form-control" rows="3" id="comment"></textarea>
+            </div>
+            <button type="submit" id="btn" class="btn btn-info">Submit</button>
+          </form>
         </div>
+      </section>
+    </div>
+  </div>
 </body>
 <!-- Photos from Pexels-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
